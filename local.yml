@@ -14,3 +14,9 @@
       dest="/tmp/hyper.deb"
   - name: Install hyper
     apt: deb="/tmp/hyper.deb"
+  - name: Download chrome
+    get_url: 
+      url="https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb"
+      dest="/tmp/google-chrome-stable_current_amd64.deb"
+  - name: Install chrome
+    apt: deb="/tmp/google-chrome-stable_current_amd64.deb"
