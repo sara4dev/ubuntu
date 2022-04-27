@@ -8,4 +8,10 @@
     apt:
       pkg: 
       - curl
-      - bitwarden
+  - name: Download my_package
+    get_url: 
+      url="https://releases.hyper.is/download/deb"
+      dest="/home/{{ ansible_env.USER }}/Downloads/hyper.deb"
+  - name: Install my_package
+    apt: deb="/home/{{ ansible_env.USER }}/Downloads/hyper.deb"
+    sudo: true
