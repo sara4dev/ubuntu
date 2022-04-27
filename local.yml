@@ -1,4 +1,5 @@
-- hosts: saravana-XPS
+- hosts: localhost
+  connection: local
   tags: always
   become: true
   tasks:
