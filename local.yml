@@ -8,3 +8,4 @@
     apt:
       pkg: 
       - curl
+      - bitwarden
