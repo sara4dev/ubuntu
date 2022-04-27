@@ -5,4 +5,4 @@
   - name: install packages
     tags: always
     apt:
-      name: git
+      name: curl
