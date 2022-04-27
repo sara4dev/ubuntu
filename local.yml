@@ -11,6 +11,6 @@
   - name: Download hyper
     get_url: 
       url="https://releases.hyper.is/download/deb"
-      dest="/home/{{ ansible_env.USER }}/Downloads/hyper.deb"
+      dest="/tmp/hyper.deb"
   - name: Install hyper
-    apt: deb="/home/{{ ansible_env.USER }}/Downloads/hyper.deb"
+    apt: deb="/tmp/hyper.deb"
