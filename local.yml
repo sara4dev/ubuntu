@@ -5,6 +5,5 @@
   - name: install packages
     tags: always
     apt:
-      autoclean: yes
       pkg:
       - git
