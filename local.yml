@@ -5,5 +5,4 @@
   - name: install packages
     tags: always
     apt:
-      pkg:
-      - git
+      name: git
