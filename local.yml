@@ -1,4 +1,4 @@
-- hosts: all
+- hosts: saravana-XPS
   tags: always
   become: true
   tasks:
