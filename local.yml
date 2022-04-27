@@ -8,10 +8,9 @@
     apt:
       pkg: 
       - curl
-  - name: Download my_package
+  - name: Download hyper
     get_url: 
       url="https://releases.hyper.is/download/deb"
       dest="/home/{{ ansible_env.USER }}/Downloads/hyper.deb"
-  - name: Install my_package
+  - name: Install hyper
     apt: deb="/home/{{ ansible_env.USER }}/Downloads/hyper.deb"
-    sudo: true
