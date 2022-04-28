@@ -20,3 +20,9 @@
       dest="/tmp/google-chrome-stable_current_amd64.deb"
   - name: Install chrome
     apt: deb="/tmp/google-chrome-stable_current_amd64.deb"
+  - name: Download vscode
+    get_url: 
+      url="https://code.visualstudio.com/sha/download?build=stable&os=linux-deb-x64"
+      dest="/tmp/vscode.deb"
+  - name: Install vscode
+    apt: deb="/tmp/vscode.deb"    
